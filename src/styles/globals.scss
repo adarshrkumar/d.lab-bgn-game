@@ -20,6 +20,15 @@ body {
     padding: 1rem;
 
     width: clamp(250px, 100%, 750px);
+
+    > section, &:not(:has(> section)) {
+        > :first-child {
+            margin-top: 0;
+        }
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 code {
