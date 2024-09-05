@@ -6,11 +6,21 @@
 - [2v2 Board](https://docs.google.com/drawings/d/1YKcvGW7RqF4KBzD5i14FNrnfvYXStyTmgjRQVHrq8Bc/edit)
 
 ## Table of Contents
-
+1. [Gameplay](#gameplay)
+2. [Setup](#setup)
+3. [Movement](#movement)
+4. [Actions](#actions)
+5. [Food](#food)
+6. [Combat](#combat)
+7. [Explore (Roll a Die)][#explore-roll-a-die]
+8. [Tiles](#tiles)
+9. [Robber](#robber)
+10. [Transfer Items (2v2 only)](#transfer-items-2v2-only)
 
 ## Gameplay
 
-### **Winning**: The last player alive wins the game. Try to vanquish your opponent\!
+### Winning: 
+#### The last player alive wins the game. Try to vanquish your opponent\!
 * Each player has two lives
 * Players can take damage from unlucky exploration or being attacked. 
 * You have two actions per turn (Explore tiles or move to gain an advantage)
