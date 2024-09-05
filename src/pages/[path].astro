@@ -26,7 +26,7 @@ name = name.join(' ')
 <Layout title={name}>
     {
         file.map(f => {
-            return <section set:html={f.compiledContent()} />
+            return <section class="page" set:html={f.compiledContent()} />
         })
     }
 </Layout>
