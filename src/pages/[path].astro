@@ -10,8 +10,8 @@ var path = Astro.params
 import Layout from '../layouts/Layout.astro'
 
 var files = await Astro.glob('../md/*.md')
-console.log(files)
-var file = files.find(f => f.file.includes(path))
+var file = files.find(f => console.log(f.file/*.includes(path*/))
+console.log(file)
 
 var name = path.toString()
 if (name.includes('-')) name = name.split('-')
