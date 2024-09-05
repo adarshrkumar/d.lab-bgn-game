@@ -1,0 +1,32 @@
+---
+export function getStaticPaths() {
+    return [
+        {params: {path: 'rules'}}
+    ]
+}
+
+var path = Astro.params
+
+import Layout from '../layouts/Layout.astro'
+
+var files = await Astro.glob('../md/*.md')
+var file = files.find(f => f.file.includes(path))
+
+var name = path
+if (name.includes('-')) name = name.split('-')
+else name = [name]
+
+name.forEach((n, i) => {
+    name[i] = `${n[0].toUpperCase()}${n.slice(1)}`
+})
+
+name = name.join(' ')
+
+---
+<Layout title={name}>
+    {
+        file.map(f => {
+            return <section set:html={f.compiledContent()} />
+        })
+    }
+</Layout>
