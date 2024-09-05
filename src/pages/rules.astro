@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/layout.astro'
+
+var rules = await Astro.glob('../md/rules.md')
+---
+<Layout>
+    {
+        rules.map(rule => {
+            return <section set:html={rule.compiledContent()} />
+        })
+    }
+</Layout>
