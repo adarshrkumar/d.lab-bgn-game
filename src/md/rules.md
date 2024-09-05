@@ -12,10 +12,10 @@
 4. [Actions](#actions)
 5. [Food](#food)
 6. [Combat](#combat)
-7. [Explore \(Roll a Die\)][#explore-roll-a-die]
+7. [Explore (Roll a Die)](#explore-roll-a-die)
 8. [Tiles](#tiles)
 9. [Robber](#robber)
-10. [Transfer Items \(2v2 only\)](#transfer-items-2v2-only)
+10. [Transfer Items (2v2 only)](#transfer-items-2v2-only)
 
 ## Gameplay
 
