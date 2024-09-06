@@ -25,16 +25,6 @@
 * Players can take damage from unlucky exploration or being attacked. 
 * You have two actions per turn (Explore tiles or move to gain an advantage)
 
-## Setup
-
-Each player begins on a start tile on **opposite ends** of the board. Roll the dice to decide who **moves** first.
-
-Each player starts with:
-- **Lives x2**
-- **Food x4**
-- **Health x4**
-- **Sword lvl.1**
-
 ## Movement
 
 Players can only move to directly adjacent tiles.  You **cannot** move diagonally between tiles. 
@@ -51,6 +41,16 @@ An action can be used to **move, attack, explore, buy, heal**, or **transfer** i
 
 You cannot **move**, **explore**, or **attack** more than once per turn. You can **buy, heal**, or **transfer** items as many times as you want per turn.
 
+## Setup
+
+Each player begins on a start tile on **opposite ends** of the board. Roll the dice to decide who **moves** first.
+
+Each player starts with:
+- **Lives x2**
+- **Food x4**
+- **Health x4**
+- **Sword lvl.1**
+
 ## Food
 
 You consume one food at the end of each turn (-1 Food). You can begin your turn with 0 food, **but** if you end with 0 food at the end of your turn, you die.
@@ -66,7 +66,7 @@ If you die, respawn on a start tile with the starting inventory (See “Setup”
 
 You can use an action regenerate health (Max health is 6\)
 
-**\-2 food for \+1 health**
+* \-2 food for \+1 health
 
 ### Swords
 
@@ -88,6 +88,8 @@ Roll a die to determine damage
 \-1 arrow every time you role
 * 1/2: \-0 health to the opponent
 * 3/4/5/6: \-1 health to the opponent
+
+![Range of a Bow](/bow-range.svg)
 
 ## Explore: (Roll a die)
 
