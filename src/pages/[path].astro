@@ -11,7 +11,6 @@ import Layout from '../layouts/Layout.astro'
 
 var files = await Astro.glob('../md/*.md')
 var file = files.find(f => f.file.includes(path))
-console.log(file)
 
 var name = path.toString()
 if (name.includes('-')) name = name.split('-')
@@ -26,8 +25,6 @@ name = name.join(' ')
 ---
 <Layout title={name}>
     {
-        file.map(f => {
-            return <section class="page" set:html={f.compiledContent()} />
-        })
+        <section class="page" set:html={file.compiledContent()} />
     }
 </Layout>
