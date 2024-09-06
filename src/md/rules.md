@@ -21,29 +21,29 @@
 
 ### Winning: 
 #### The last player alive wins the game. Try to vanquish your opponent\!
-* Each player has two lives
-* Players can take damage from unlucky exploration or being attacked. 
-* You have two actions per turn (Explore tiles or move to gain an advantage)
+- Each player has two lives
+- Players can take damage from unlucky exploration or being attacked. 
+- You have two actions per turn (Explore tiles or move to gain an advantage)
 
 ## Movement
 
-Players can only move to directly adjacent tiles.  You **cannot** move diagonally between tiles. 
+Players can only move to directly adjacent tiles.  You **cannot*- move diagonally between tiles. 
 
 2v2: On the 2v2 board you can move diagonally between bridge tiles
 
-You **cannot** move to a tile that another player is on
+You **cannot*- move to a tile that another player is on
 
 ## Actions
 
-Each player gets **2 actions per turn** on the side of the river you start on, and **3 actions** on the opposite side. If you want you are able to skip your actions/turn. 
+Each player gets **2 actions per turn*- on the side of the river you start on, and **3 actions*- on the opposite side. If you want you are able to skip your actions/turn. 
 
-An action can be used to **move, attack, explore, buy, heal**, or **transfer** items (in duos). 
+An action can be used to **move, attack, explore, buy, heal**, or **transfer*- items (in duos). 
 
-You cannot **move**, **explore**, or **attack** more than once per turn. You can **buy, heal**, or **transfer** items as many times as you want per turn.
+You cannot **move**, **explore**, or **attack*- more than once per turn. You can **buy, heal**, or **transfer*- items as many times as you want per turn.
 
 ## Setup
 
-Each player begins on a start tile on **opposite ends** of the board. Roll the dice to decide who **moves** first.
+Each player begins on a start tile on **opposite ends*- of the board. Roll the dice to decide who **moves*- first.
 
 Each player starts with:
 - **Lives x2**
@@ -53,7 +53,7 @@ Each player starts with:
 
 ## Food
 
-You consume one food at the end of each turn (-1 Food). You can begin your turn with 0 food, **but** if you end with 0 food at the end of your turn, you die.
+You consume one food at the end of each turn (-1 Food). You can begin your turn with 0 food, **but*- if you end with 0 food at the end of your turn, you die.
 **You need food at the beginning of your turn in order to move.**
 
 You cannot move without at least 1 food. 
@@ -62,7 +62,7 @@ You cannot move without at least 1 food.
 
 If you decide to explore, roll the dice. The outcomes differ between tile types
 
-You **cannot** explore a tile two turns in a row
+You **cannot*- explore a tile two turns in a row
 
 # Tiles
 
@@ -96,7 +96,7 @@ Terrain Bonus: **Protection from the bow**
 
 ## Mountain Tiles
 
-Landing Bonus: **\+1 arrow** 
+Landing Bonus: **\+1 arrow*- 
 
 Terrain Bonus: **Increased bow range (See "Combat")**
 
@@ -115,18 +115,18 @@ Landing Bonus: **None**
 Terrain Bonus: **None**
 
 ### Explore: (Roll a die)
-1. Get Robbed **AND** \-1 sword lvl (If possible, If losing a sword level is not possible get robbed again)
+1. Get Robbed **AND*- \-1 sword lvl (If possible, If losing a sword level is not possible get robbed again)
 2. \-2 health
-3. Go back two tiles of your choosing  (You do **NOT** receive the landing bonus from the tile you land on) **AND** end your turn with 1 food (even if you had 0\)
-4. \+2 gold **AND** \+1 arrow
-5. \+1 upgraded sword lvl **AND** \+1 health
-6. \+5 food **OR** \+1 bow **AND** \+1 arrow(You Choose)
+3. Go back two tiles of your choosing  (You do **NOT*- receive the landing bonus from the tile you land on) **AND*- end your turn with 1 food (even if you had 0\)
+4. \+2 gold **AND*- \+1 arrow
+5. \+1 upgraded sword lvl **AND*- \+1 health
+6. \+5 food **OR*- \+1 bow **AND*- \+1 arrow(You Choose)
 
 ## River Tiles
 
 Landing Bonus: **\+1 food**
 
-Terrain Bonus: You **cannot** move the turn after you land.
+Terrain Bonus: You **cannot*- move the turn after you land.
 
 Raft: A raft allows you to move across in 1 turn
 
@@ -144,24 +144,24 @@ After you move off of the river tile discard your raft.
 
 ## Village Tiles
 
-Landing Bonus: **None** 
+Landing Bonus: **None*- 
 
-Terrain Bonus: **You can buy items using gold.** 
+Terrain Bonus: **You can buy items using gold.*- 
 
 Each trade costs one action: Ex. You just moved onto a village on your side, so you can trade with the village once. 
 
 ### Trade:
-- **Food (2x): 1 Gold**
+- Food (2x): 1 Gold**
 
-- **Sword (Lvl. 2): 1 Gold \+ Sword Lvl. 1**
+- Sword (Lvl. 2): 1 Gold \+ Sword Lvl. 1
 
-- **Sword (Lvl. 3): 2 Gold \+ Sword Lvl. 2**
+- Sword (Lvl. 3): 2 Gold \+ Sword Lvl. 2
 
-- **Bow (1x): 2 Gold**
+- Bow (1x): 2 Gold
 
-- **Arrows (2x): 1 Gold**
+- Arrows (2x): 1 Gold
 
-- **Raft (1x): 2 Gold**
+- Raft (1x): 2 Gold
 
 
 ## Combat
@@ -172,28 +172,28 @@ If you die, respawn on a start tile with the starting inventory (See "Setup").
 
 You can use an action regenerate health (Max health is 6\)
 
-* \-2 food for \+1 health
+- \-2 food for \+1 health
 
 ### Swords
 
 #### Lvl. 1 sword:
-* \-1 health to the opponent
+- \-1 health to the opponent
 
 #### Lvl. 2 sword:
 Roll a die to determine damage
-* 1/2/3: \-1 health to the opponent
-* 4/5/6: \-2 health to the opponent
+- 1/2/3: \-1 health to the opponent
+- 4/5/6: \-2 health to the opponent
 
 #### Lvl. 3 sword:
 Roll a die to determine damage
-* 1/2/3: \-2 health to the opponent
-* 4/5/6: \-3 health to the opponent
+- 1/2/3: \-2 health to the opponent
+- 4/5/6: \-3 health to the opponent
 
 ### Bow:
 Roll a die to determine damage
 \-1 arrow every time you role
-* 1/2: \-0 health to the opponent
-* 3/4/5/6: \-1 health to the opponent
+- 1/2: \-0 health to the opponent
+- 3/4/5/6: \-1 health to the opponent
 
 ![Range of a Bow](/imgs/bow-range.svg)
 
