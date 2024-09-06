@@ -195,7 +195,7 @@ Roll a die to determine damage
 * 1/2: \-0 health to the opponent
 * 3/4/5/6: \-1 health to the opponent
 
-![Range of a Bow](/bow-range.svg)
+![Range of a Bow](/imgs/bow-range.svg)
 
 # Robber
 
