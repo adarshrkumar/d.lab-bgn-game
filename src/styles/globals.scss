@@ -21,9 +21,11 @@ body {
     width: clamp(250px, 100%, 750px);
 
     > section.page, &:not(:has(> section)) {
+        $pad: 2rem;
+
         box-sizing: border-box;
-        margin: 0.5rem;
-        padding: 1rem;
+        margin: #{$pad / 2};
+        padding: $pad;
 
         background: #eee;
 
