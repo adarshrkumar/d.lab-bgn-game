@@ -58,40 +58,7 @@ You consume one food at the end of each turn (-1 Food). You can begin your turn 
 
 You cannot move without at least 1 food. 
 
-## Combat
-
-You can attack your opponent. Attacking costs an action. 
-
-If you die, respawn on a start tile with the starting inventory (See “Setup”).
-
-You can use an action regenerate health (Max health is 6\)
-
-* \-2 food for \+1 health
-
-### Swords
-
-#### Lvl. 1 sword:
-* \-1 health to the opponent
-
-#### Lvl. 2 sword:
-Roll a die to determine damage
-* 1/2/3: \-1 health to the opponent
-* 4/5/6: \-2 health to the opponent
-
-#### Lvl. 3 sword:
-Roll a die to determine damage
-* 1/2/3: \-2 health to the opponent
-* 4/5/6: \-3 health to the opponent
-
-### Bow:
-Roll a die to determine damage
-\-1 arrow every time you role
-* 1/2: \-0 health to the opponent
-* 3/4/5/6: \-1 health to the opponent
-
-![Range of a Bow](/bow-range.svg)
-
-## Explore: (Roll a die)
+## Exploration
 
 If you decide to explore, roll the dice. The outcomes differ between tile types
 
@@ -106,7 +73,7 @@ Landing Bonus: **\+2 food**
 Terrain Bonus: **None**
 
 ### Explore: (Roll a die)
-1. Get robbed (See “Robber”)
+1. Get robbed (See "Robber")
 2. \-1 health
 3. Your next turn you cannot move or explore.
 4. \+1 bow
@@ -117,7 +84,7 @@ Terrain Bonus: **None**
 
 Landing Bonus: **\+1 gold**
 
-Terrain Bonus: Protection from the bow
+Terrain Bonus: **Protection from the bow**
 
 ### Explore: (Roll a die)
 1. \-1 health
@@ -131,7 +98,7 @@ Terrain Bonus: Protection from the bow
 
 Landing Bonus: **\+1 arrow** 
 
-Terrain Bonus: **Increased bow range (See “Combat”)**
+Terrain Bonus: **Increased bow range (See "Combat")**
 
 ### Explore: (Roll a die)
 1. Get Robbed
@@ -196,6 +163,39 @@ Each trade costs one action: Ex. You just moved onto a village on your side, so 
 
 - **Raft (1x): 2 Gold**
 
+
+## Combat
+
+You can attack your opponent. Attacking costs an action. 
+
+If you die, respawn on a start tile with the starting inventory (See "Setup").
+
+You can use an action regenerate health (Max health is 6\)
+
+* \-2 food for \+1 health
+
+### Swords
+
+#### Lvl. 1 sword:
+* \-1 health to the opponent
+
+#### Lvl. 2 sword:
+Roll a die to determine damage
+* 1/2/3: \-1 health to the opponent
+* 4/5/6: \-2 health to the opponent
+
+#### Lvl. 3 sword:
+Roll a die to determine damage
+* 1/2/3: \-2 health to the opponent
+* 4/5/6: \-3 health to the opponent
+
+### Bow:
+Roll a die to determine damage
+\-1 arrow every time you role
+* 1/2: \-0 health to the opponent
+* 3/4/5/6: \-1 health to the opponent
+
+![Range of a Bow](/bow-range.svg)
 
 # Robber
 
