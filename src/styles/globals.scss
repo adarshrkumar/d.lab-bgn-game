@@ -11,15 +11,17 @@
 }
 html {
     font-family: system-ui, sans-serif;
-    background: #eee;
 }
 
 body {
     box-sizing: border-box;
     margin: 0;
+    margin-inline: auto;
     padding: 1rem;
 
     width: clamp(250px, 100%, 750px);
+
+    background: #eee;
 
     > section.page, &:not(:has(> section)) {
         > :first-child {
