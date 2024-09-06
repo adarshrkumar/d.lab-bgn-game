@@ -38,6 +38,15 @@ body {
             margin-bottom: 0;
         }
     }
+
+    > section.page {
+        img {
+            box-sizing: border-box;
+            padding: 0.5rem;
+
+            border: solid 1px black
+        }
+    }
 }
 
 code {
