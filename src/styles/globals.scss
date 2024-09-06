@@ -21,9 +21,9 @@ body {
 
     width: clamp(250px, 100%, 750px);
 
-    background: #eee;
-
     > section.page, &:not(:has(> section)) {
+        background: #eee;
+
         > :first-child {
             margin-top: 0;
         }
