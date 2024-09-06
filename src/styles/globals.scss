@@ -17,12 +17,17 @@ body {
     box-sizing: border-box;
     margin: 0;
     margin-inline: auto;
-    padding: 1rem;
 
     width: clamp(250px, 100%, 750px);
 
     > section.page, &:not(:has(> section)) {
+        box-sizing: border-box;
+        margin: 0.5rem;
+        padding: 1rem;
+
         background: #eee;
+
+        border: solid 1px black;
 
         > :first-child {
             margin-top: 0;
