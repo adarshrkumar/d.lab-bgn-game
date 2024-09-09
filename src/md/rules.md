@@ -47,7 +47,7 @@ Each player begins on a start tile on **opposite ends** of the board. Roll the d
 
 Each player starts with:
 - **Lives x2**
-- **Food x4**
+- **Food x5**
 - **Health x4**
 - **Sword lvl.1**
 
@@ -117,7 +117,7 @@ Terrain Bonus: **None**
 ### Explore: (Roll a die)
 1. Get [Robbed](#robber) **AND** \-1 sword lvl (If possible, If losing a sword level is not possible get [robbed](#robber) again)
 2. \-2 health
-3. Go back two tiles of your choosing (You do **NOT** receive the landing bonus from the tile you land on) **AND** end your turn with 1 food (even if you had 0\)
+3. Go back two tiles of your choosing (You do **NOT** receive the landing bonus from the tile you land on) **AND** end your turn with 2 food (even if you had 0\)
 4. \+2 gold **AND** \+1 arrow
 5. \+1 upgraded sword lvl **AND** \+1 health
 6. \+5 food **OR** \+1 bow **AND** \+1 arrow (You Choose)
