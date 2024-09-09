@@ -151,7 +151,7 @@ Terrain Bonus: **You can buy items using gold.**
 Each trade costs one action: Ex. You just moved onto a village on your side, so you can trade with the village once. 
 
 ### Trade:
-- Food (2x): 1 Gold**
+- Food (2x): 1 Gold
 
 - Sword (Lvl. 2): 1 Gold \+ Sword Lvl. 1
 
