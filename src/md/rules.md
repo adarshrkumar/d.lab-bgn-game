@@ -202,9 +202,3 @@ Roll a die to determine damage
 The robber will take 1 gold from you (-1 gold)
 
 If you do not have gold, the robber will take 1 food (-1 food)
-
-# Transfer Items (2v2 only)
-
-If you want to give items to your teammate you must be adjacently next to them. 1 action per item transferred
-
-You can use an action to give items to your teammate. Each type of item you give is a different action but you can give an unrestricted amount of a single item in one action. 
