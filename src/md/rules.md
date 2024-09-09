@@ -53,7 +53,7 @@ Each player starts with:
 
 ## Food
 
-You consume one food at the end of each turn (-1 Food). You can begin your turn with 0 food, **but** if you end with 0 food at the end of your turn, you die.
+You consume one food every time you move (-1 Food). You can begin your turn with 0 food, **but** if you end with 0 food at the end of your turn, you die.
 **You need food at the beginning of your turn in order to move.**
 
 You cannot move without at least 1 food. 
