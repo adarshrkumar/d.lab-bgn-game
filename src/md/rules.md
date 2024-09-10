@@ -3,7 +3,6 @@
 ## Quick Links
 - [Player Stats](https://docs.google.com/document/d/19gz7mYW-GLeeJPnchrY0AXrsN-mkd1T1ShKmFR11ft0/edit?usp=sharing)
 - [1v1 Board](https://docs.google.com/drawings/d/1sP9O-cH42lLfUjTe3G0OExr\_oXQudn01vqAuH2pFcM4/edit?usp=sharing)
-- [2v2 Board](https://docs.google.com/drawings/d/1YKcvGW7RqF4KBzD5i14FNrnfvYXStyTmgjRQVHrq8Bc/edit)
 
 ## Table of Contents
 1. [Gameplay](#gameplay)
