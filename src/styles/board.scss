@@ -32,9 +32,9 @@ body {
         grid-row: span 2;
         translate: 0 -50%;
 
-        &:nth-child(even) {
+        &:nth-child(odd) {
             .item {
-                // translate: -50% 0;
+                translate: 50% 0;
             }
         }
 
