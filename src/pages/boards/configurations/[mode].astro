@@ -16,7 +16,8 @@ import '../../../styles/board.scss'
 
 import configs from '../../../../boards/configurations.js'
 
-var pTitle = `${mode} | Board Configurations`
+var mTitle = `${mode.slice(0, 1).toUpperCase()}${mode.slice(1)}`
+var pTitle = `${mTitle} | Board Configurations`
 
 var tiles = [
 	['start t', 'start t', 'start t', 'start t', 'start t'], 
