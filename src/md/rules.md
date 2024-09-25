@@ -34,11 +34,11 @@ Players can only move to directly adjacent tiles.
 
 Each player gets **two actions per turn** on the side of the river you start on, and **3 actions** on the opposite side.
 - An action can be used to: 
-- - Move (1x)
-- - Attack (1x)
-- - Explore (1x)
-- - Buy (1 item bought = 1 action)
-- - Heal (1 health = 1 action)
+    - Move (1x)
+    - Attack (1x)
+    - Explore (1x)
+    - Buy (1 item bought = 1 action)
+    - Heal (1 health = 1 action)
 - You can only **move**, **explore**, and **attack** once each, per turn.
 - You are able to skip your actions.
 
