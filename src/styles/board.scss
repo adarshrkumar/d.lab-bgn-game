@@ -27,7 +27,7 @@ body {
     display: grid;
     grid-template-rows: repeat(#{$size * 2}, 1fr);
 
-    translate: 0 -5%;
+    translate: 0 -4%;
 
     .row {
         display: flex;
