@@ -6,6 +6,7 @@ $tiles-amt: 13;
 body {
     box-sizing: border-box;
     margin: 0;
+    overflow-y: clip;
 }
 
 .grid-parent {
