@@ -30,7 +30,7 @@ body {
     .row {
         display: flex;
         grid-row: span 2;
-        translate: -50% 0;
+        translate: 0 -50%;
 
         &:nth-child(even) {
             .item {
