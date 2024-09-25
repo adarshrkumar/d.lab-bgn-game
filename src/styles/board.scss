@@ -6,7 +6,7 @@ $tiles-amt: 13;
 body {
     box-sizing: border-box;
     margin: 0;
-    overflow-y: clip;
+    // overflow-y: clip;
 }
 
 .grid-parent {
@@ -18,7 +18,7 @@ body {
     aspect-ratio: 1;
 
     // scale: 1.165;
-    overflow-y: clip;
+    // overflow-y: clip;
 }
 
 .grid {
