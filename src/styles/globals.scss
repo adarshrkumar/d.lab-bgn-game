@@ -18,7 +18,9 @@ body {
     margin: 0;
     margin-inline: auto;
 
-    width: clamp(250px, 100%, 750px);
+    &:has(.page) {
+        width: clamp(250px, 100%, 750px);
+    }
 
     > section.page, &:not(:has(> section)) {
         $pad: 2rem;
