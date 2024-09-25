@@ -31,9 +31,14 @@ body {
         display: flex;
         grid-row: span 2;
 
-        &:nth-child(even) {
+        &:nth-child(odd) {
             .item {
                 translate: -50% 0;
+            }
+        }
+        &:nth-child(even) {
+            .item {
+                translate: -100% 0;
             }
         }
 
