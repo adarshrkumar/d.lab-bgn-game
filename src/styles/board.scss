@@ -34,7 +34,12 @@ body {
 
         &:nth-child(odd) {
             .item {
-                translate: 50% 0;
+                translate: 50% -50%;
+            }
+        }
+        &:nth-child(even) {
+            .item {
+                translate: 0 -50%;
             }
         }
 
