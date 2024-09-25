@@ -1,0 +1,55 @@
+---
+export function getStaticPaths() {
+    return [
+        {params: {mode: 'learner'}}, 
+        {params: {mode: 'easy'}}, 
+        {params: {mode: 'medium'}}, 
+        {params: {mode: 'hard'}}, 
+        {params: {mode: 'extreme'}}, 
+    ]
+}
+
+const { mode } = Astro.params;
+
+import Layout from '../../../layouts/Layout.astro'
+import '../../../styles/board.scss'
+
+import configs from '../../../../boards/configurations.js'
+
+var pTitle = `${mode} | Board Configurations`
+
+var tiles = [
+	['start t', 'start t', 'start t', 'start t', 'start t'], 
+	['oob l', 'mine', 'forest', 'mine', 'forest', 'oob r'], 
+	['forest', 'temple', 'mountain', 'mountain', 'mine'], 
+	['oob l', 'forest', 'forest', 'forest', 'temple', 'oob r'], 
+	['temple', 'mountain', 'mine', 'village', 'forest'], 
+	['oob l', 'river', 'forest', 'forest', 'mountain', 'oob r'], 
+	['forest', 'river', 'bridge', 'river', 'forest'], 
+	['oob l', 'mountain', 'forest', 'forest', 'river', 'oob r'], 
+	['forest', 'village', 'mine', 'mountain', 'temple'], 
+	['oob l', 'temple', 'forest', 'forest', 'forest', 'oob r'], 
+	['mine', 'mountain', 'mountain', 'temple', 'forest'], 
+	['oob l', 'forest', 'mine', 'forest', 'mine', 'oob r'], 
+	['start b', 'start b', 'start b', 'start b', 'start b'], 
+]
+---
+<Layout title={pTitle}>
+    <main class="grid-parent">
+        <section class="grid">
+            {
+                tiles.map((row, i) => {
+                    var amt = 4
+                    if (i%2) amt++
+                    return (
+                        <div class="row">
+                            {row.map(tile => {
+                                return (<div class={`item ${tile}`} />)
+                            })}
+                        </div>
+                    )
+                })
+            }
+        </section>
+    </main>
+</Layout>
