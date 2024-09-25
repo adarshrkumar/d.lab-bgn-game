@@ -22,7 +22,7 @@ body {
         width: clamp(250px, 100%, 750px);
     }
 
-    > section.page, &:not(:has(> section)) {
+    > section.page {
         $pad: 2rem;
 
         box-sizing: border-box;
