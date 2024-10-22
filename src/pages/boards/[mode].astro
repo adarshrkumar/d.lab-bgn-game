@@ -38,8 +38,8 @@ var pTitle = `${mTitle} | Board Configurations`
 ---
 <Layout title={pTitle}>
     <main class="grid-parent">
+        <pre>{JSON.stringify(tiles, null, 4)}</pre>
         {
-            <pre>{JSON.stringify(tiles, null, 4)}</pre>
             tiles.map(t => {
                 <section class="grid">
                     {
