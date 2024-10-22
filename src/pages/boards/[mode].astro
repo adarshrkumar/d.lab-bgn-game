@@ -24,11 +24,11 @@ function randomNum(max) {
 }
 
 var allBoards = {
-    learner: await Astro.glob('../../../boards/learner'),
-    easy: await Astro.glob('../../../boards/easy'),
-    medium: await Astro.glob('../../../boards/medium'),
-    hard: await Astro.glob('../../../boards/hard'),
-    extreme: await Astro.glob('../../../boards/extreme'),
+    learner: await Astro.glob('../../../boards/learner/*.json'),
+    easy: await Astro.glob('../../../boards/easy/*.json'),
+    medium: await Astro.glob('../../../boards/medium/*.json'),
+    hard: await Astro.glob('../../../boards/hard/*.json'),
+    extreme: await Astro.glob('../../../boards/extreme/*.json'),
 }
 
 const { mode } = Astro.params;
@@ -37,7 +37,7 @@ var boards = allBoards[mode]
 
 var fName = randomNum(boards.length)
 
-var tiles = boards.find(b => getFName(b) === `${fName}.js`)
+var tiles = boards.find(b => getFName(b) === `${fName}.json`)
 
 import Layout from '../../layouts/Layout.astro'
 import '../../styles/board.scss'
