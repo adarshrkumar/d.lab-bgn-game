@@ -28,7 +28,9 @@ var boards = allBoards[mode]
 
 var fName = mode === 'default' ? 0 : randomNum(boards.length)
 
-var tiles = boards.filter(b => b.name === fName)
+var theTiles = boards.filter(b => b.name === fName)
+var tiles = []
+theTiles.map(t => tiles = t)
 
 import Layout from '../../layouts/Layout.astro'
 import '../../styles/board.scss'
@@ -39,25 +41,21 @@ var pTitle = `${mTitle} | Board Configurations`
 <Layout title={pTitle}>
     <main class="grid-parent">
         <pre>{JSON.stringify(tiles, null, 4)}</pre>
-        {
-            tiles.map(t => {
-                <section class="grid">
-                    {
-                        t.default.tiles.map((row, i) => {
-                            var amt = 4
-                            if (i%2) amt++
-                            return (
-                                <div class="row">
-                                    {row.map(tile => {
-                                        return (<div class={`item ${tile}`} />)
-                                    })}
-                                </div>
-                            )
-                        })
-                    }
-                </section>
-            })
-        }
+        <section class="grid">
+            {
+                tiles.map((row, i) => {
+                    var amt = 4
+                    if (i%2) amt++
+                    return (
+                        <div class="row">
+                            {row.map(tile => {
+                                return (<div class={`item ${tile}`} />)
+                            })}
+                        </div>
+                    )
+                })
+            }
+        </section>
     </main>
     <script>
         javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
