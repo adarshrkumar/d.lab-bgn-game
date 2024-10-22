@@ -10,7 +10,6 @@ export function getStaticPaths() {
 }
 
 function randomNum(max) {
-    var amt = mode === 'default' ? 1 : 0
     return Math.floor(Math.random() * max) - amt;
 }
 
@@ -27,7 +26,7 @@ if (!mode) mode = 'default'
 
 var boards = allBoards[mode]
 
-var fName = randomNum(boards.length)
+var fName = mode === 'default' ? 0 : randomNum(boards.length)
 
 var tiles = boards.filter(b => b.name === fName)
 console.log(fName)
