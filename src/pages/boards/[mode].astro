@@ -39,10 +39,8 @@ var fName = randomNum(boards.length)
 
 var tiles = boards.find(b => getFName(b) === `${fName}.js`)
 
-import Layout from '../../../layouts/Layout.astro'
-import '../../../styles/board.scss'
-
-import configs from '../../../../boards/configurations.js'
+import Layout from '../../ayouts/Layout.astro'
+import '../../styles/board.scss'
 
 var mTitle = `${mode.slice(0, 1).toUpperCase()}${mode.slice(1)}`
 var pTitle = `${mTitle} | Board Configurations`
