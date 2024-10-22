@@ -9,16 +9,6 @@ export function getStaticPaths() {
     ]
 }
 
-function getFName(path) {
-    if (path.startsWith('/')) path = path.slice(1)
-    if (path.endsWith('/')) path = path.slice(0, -1)
-
-    if (path.includes('/')) {
-        path = path.split('/').slice(-1)[0]
-    }
-    return path
-}
-
 function randomNum(max) {
   return Math.floor(Math.random() * max);
 }
@@ -37,7 +27,7 @@ var boards = allBoards[mode]
 
 var fName = randomNum(boards.length)
 
-var tiles = boards.find(b => getFName(b.name) === fName)
+var tiles = boards.find(b => b.name === fName)
 
 import Layout from '../../layouts/Layout.astro'
 import '../../styles/board.scss'
