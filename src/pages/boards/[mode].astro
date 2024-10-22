@@ -29,7 +29,7 @@ var boards = allBoards[mode]
 var fName = mode === 'default' ? 0 : randomNum(boards.length)
 
 var tiles = boards.filter(b => b.name === fName)
-console.log(titles)
+console.log(tiles)
 
 import Layout from '../../layouts/Layout.astro'
 import '../../styles/board.scss'
