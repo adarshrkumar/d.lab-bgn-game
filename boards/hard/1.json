@@ -1,0 +1,15 @@
+[
+    ["start t", "start t", "start t", "start t", "start t"], 
+    ["oob l", "mine", "forest", "mine", "forest", "oob r"], 
+    ["forest", "temple", "mountain", "mountain", "mine"], 
+    ["oob l", "forest", "forest", "forest", "temple", "oob r"], 
+    ["temple", "mountain", "mine", "village", "forest"], 
+    ["oob l", "river", "forest", "forest", "mountain", "oob r"], 
+    ["forest", "river", "bridge", "river", "forest"], 
+    ["oob l", "mountain", "forest", "forest", "river", "oob r"], 
+    ["forest", "village", "mine", "mountain", "temple"], 
+    ["oob l", "temple", "forest", "forest", "forest", "oob r"], 
+    ["mine", "mountain", "mountain", "temple", "forest"], 
+    ["oob l", "forest", "mine", "forest", "mine", "oob r"], 
+    ["start b", "start b", "start b", "start b", "start b"]
+]

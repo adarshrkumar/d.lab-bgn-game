@@ -1,0 +1,75 @@
+---
+export function getStaticPaths() {
+    return [
+        {params: {mode: 'learner'}}, 
+        {params: {mode: 'easy'}}, 
+        {params: {mode: 'medium'}}, 
+        {params: {mode: 'hard'}}, 
+        {params: {mode: 'extreme'}}, 
+    ]
+}
+
+function getFName(path) {
+    if (path.startsWith('/')) path = path.slice(1)
+    if (path.endsWith('/')) path = path.slice(0, -1)
+
+    if (path.includes('/')) {
+        path = path.split('/').slice(-1)[0]
+    }
+    return path
+}
+
+function randomNum(max) {
+  return Math.floor(Math.random() * max);
+}
+
+var allBoards = {
+    learner: await Astro.glob('../../../boards/learner'),
+    easy: await Astro.glob('../../../boards/easy'),
+    medium: await Astro.glob('../../../boards/medium'),
+    hard: await Astro.glob('../../../boards/hard'),
+    extreme: await Astro.glob('../../../boards/extreme'),
+}
+
+const { mode } = Astro.params;
+
+var boards = allBoards[mode]
+
+var fName = randomNum(boards.length)
+
+var tiles = boards.find(b => getFName(b) === `${fName}.js`)
+
+import Layout from '../../../layouts/Layout.astro'
+import '../../../styles/board.scss'
+
+import configs from '../../../../boards/configurations.js'
+
+var mTitle = `${mode.slice(0, 1).toUpperCase()}${mode.slice(1)}`
+var pTitle = `${mTitle} | Board Configurations`
+---
+<Layout title={pTitle}>
+    <main class="grid-parent">
+        {
+            tiles.map(t => {
+                <section class="grid">
+                    {
+                        t.map((row, i) => {
+                            var amt = 4
+                            if (i%2) amt++
+                            return (
+                                <div class="row">
+                                    {row.map(tile => {
+                                        return (<div class={`item ${tile}`} />)
+                                    })}
+                                </div>
+                            )
+                        })
+                    }
+                </section>
+            })
+        }
+    </main>
+    <script>
+        javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
+    </script>
+</Layout>
