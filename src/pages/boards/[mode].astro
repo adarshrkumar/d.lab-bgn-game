@@ -38,12 +38,12 @@ var pTitle = `${mTitle} | Board Configurations`
 ---
 <Layout title={pTitle}>
     <main class="grid-parent">
-        <pre>{JSON.stringify(tiles, null, 4)}</pre>
         {
             tiles.map(t => {
+                <pre>{JSON.stringify(t.default, null, 4)}</pre>
                 <section class="grid">
                     {
-                        t.tiles.map((row, i) => {
+                        t.default.tiles.map((row, i) => {
                             var amt = 4
                             if (i%2) amt++
                             return (
