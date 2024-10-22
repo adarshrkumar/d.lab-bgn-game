@@ -37,7 +37,7 @@ var boards = allBoards[mode]
 
 var fName = randomNum(boards.length)
 
-var tiles = boards.find(b => getFName(b) === `${fName}.json`)
+var tiles = boards.find(b => getFName(b.file) === `${fName}.json`)
 
 import Layout from '../../layouts/Layout.astro'
 import '../../styles/board.scss'
