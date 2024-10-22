@@ -28,6 +28,7 @@ var boards = allBoards[mode]
 var fName = randomNum(boards.length)
 
 var tiles = boards.find(b => b.name === fName)
+console.log(tiles)
 
 import Layout from '../../layouts/Layout.astro'
 import '../../styles/board.scss'
@@ -40,6 +41,7 @@ var pTitle = `${mTitle} | Board Configurations`
         {
             tiles.map(t => {
                 <section class="grid">
+                    {}
                     {
                         t.tiles.map((row, i) => {
                             var amt = 4
