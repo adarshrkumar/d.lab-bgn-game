@@ -10,7 +10,8 @@ export function getStaticPaths() {
 }
 
 function randomNum(max) {
-  return Math.floor(Math.random() * max);
+    var amt = mode === 'default' ? 1 : 0
+    return Math.floor(Math.random() * max - amt);
 }
 
 var allBoards = {
@@ -22,12 +23,13 @@ var allBoards = {
 }
 
 const { mode } = Astro.params;
+if (!mode) mode = 'default'
 
 var boards = allBoards[mode]
 
 var fName = randomNum(boards.length)
 
-var tiles = boards.find(b => b.name === fName)
+var tiles = boards.filter(b => b.name === fName)
 console.log(tiles)
 
 import Layout from '../../layouts/Layout.astro'
