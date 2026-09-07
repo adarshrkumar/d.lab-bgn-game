@@ -18,14 +18,14 @@ html {
         box-sizing: border-box;
         padding: math.div($pad, 2);
         min-height: calc(100dvh - 2px);
+        break-inside: avoid;
+
+        &:not(:last-child) {
+            break-after: always;
+        }
 
         :first-child {
             margin-top: 0;
-        }
-
-        break-inside: avoid;
-        &:not(:last-child) {
-            break-after: always;
         }
 
         img {
