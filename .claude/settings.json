@@ -1,0 +1,145 @@
+{
+    "hooks": {
+        "MessageDisplay": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "bash ~/.claude/hooks/stop-word-check.sh",
+                        "timeout": 30
+                    }
+                ]
+            }
+        ],
+        "PreToolUse": [
+            {
+                "matcher": "Read|Edit|NotebookEdit|Agent|Bash",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node ~/.claude/hooks/index.js",
+                        "timeout": 20
+                    }
+                ]
+            },
+            {
+                "matcher": "Bash",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "echo 'This specific Bash command is not allowed to be called in this specific way. Please use one of the following alternatives. 1. Call the same command with other input args (e.g. non-space escaped paths, use quotes instead; no relative paths without a `./` prefix; etc.). 2. Call one or more different commands to get the same information. 3. Use a different tool to get the same information such as manually `Read()`ing or `Write()`/`Edit()`ing files COMPLETLY MANUALLY instead of \"efficient batching of operations\" (in this case that is not an accurate description of what is happening; it is more like a random shitshow of possible shitfucks to the relavent files, etc.).'; exit 0",
+                        "timeout": 20
+                    }
+                ]
+            }
+        ],
+        "PostToolUse": [
+            {
+                "matcher": "Agent",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node ~/.claude/hooks/check-empty-agents-dir.js",
+                        "timeout": 15
+                    }
+                ]
+            }
+        ],
+        "Stop": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "bash ~/.claude/hooks/on-stop.sh",
+                        "continueOnBlock": true,
+                        "timeout": 60
+                    }
+                ]
+            }
+        ]
+    },
+    "permissions": {
+        "allow": [
+            "mcp__context7__resolve-library-id",
+            "mcp__context7__query-docs",
+            "mcp__vercel__list_teams",
+            "mcp__vercel__list_projects",
+            "mcp__vercel__get_project",
+            "mcp__vercel__list_deployments",
+            "mcp__vercel__get_deployment",
+            "mcp__vercel__get_deployment_build_logs",
+            "mcp__vercel__get_runtime_logs",
+            "mcp__vercel__web_fetch_vercel_url",
+            "mcp__ide__getDiagnostics",
+            "Bash(npx vercel:*)",
+            "Bash(vercel project:*)",
+            "Bash(vercel env:*)",
+            "Bash(npx drizzle-kit:*)",
+            "Bash(node *)",
+            "Bash(bash *)",
+            "Bash(nvm use)",
+            "Bash(sleep:*)",
+            "Bash(grep:*)",
+            "Bash(mkdir:*)",
+            "Bash(ls ../*)",
+            "Bash(ls * ../*)",
+            "Bash(mv ./* ./*)",
+            "Bash(mv \"./*\" \"./*\")",
+            "Bash(mv './*' './*')",
+            "Bash(mv chapters/* chapters/*)",
+            "Bash(mv 'chapters/*' 'chapters/*')",
+            "Bash(mv \"chapters/*\" \"chapters/*)",
+            "Bash(mv scenes/* scenes/*)",
+            "Bash(mv 'scenes/*' 'scenes/*')",
+            "Bash(mv \"scenes/*\" \"scenes/*\")",
+            "Bash(mv locations/* locations/*)",
+            "Bash(mv 'locations/*' 'locations/*')",
+            "Bash(mv \"locations/*\" \"locations/*)",
+            "Bash(mv people/* people/*)",
+            "Bash(mv 'people/*' 'people/*')",
+            "Bash(mv \"people/*\" \"people/*)",
+            "Bash(cp ./* ./*)",
+            "Bash(cp \"./*\" \"./*\")",
+            "Bash(cp './*' './*')",
+            "Bash(cp chapters/* chapters/*)",
+            "Bash(cp 'chapters/*' 'chapters/*')",
+            "Bash(cp \"chapters/*\" \"chapters/*\")",
+            "Bash(cp scenes/* scenes/*)",
+            "Bash(cp 'scenes/*' 'scenes/*')",
+            "Bash(cp \"scenes/*\" \"scenes/*\")",
+            "Bash(cp \"locations/*\" \"locations/*\")",
+            "Bash(cp people/* people/*)",
+            "Bash(cp \"people/*\" \"people/*\")",
+            "Bash(cp 'people/*' 'people/*')",
+            "Bash(rm test_*)",
+            "Bash(rm ./*)",
+            "Bash(rm \"./*\")",
+            "Bash(rm './*')",
+            "Bash(rm chapters/*)",
+            "Bash(rm \"chapters/*\")",
+            "Bash(rm 'chapters/*')",
+            "Bash(rm \"locations/*\")",
+            "Bash(rm 'locations/*')",
+            "Bash(rm people/*)",
+            "Bash(rm *.md)",
+            "Bash(npm run check)",
+            "Bash(npm install:*)",
+            "Bash(npm uninstall:*)",
+            "Write(*)",
+            "Edit(*)",
+            "Read(*)"
+        ],
+        "deny": [
+            "Bash(git add *)",
+            "Bash(git commit *)",
+            "Bash(* git add *)",
+            "Bash(* git commit *)",
+            "Bash(npm run check 2>&1 | *)",
+            "Bash(* npm run check 2>&1 | *)"
+        ],
+        "ask": [
+            "Edit(eslint/**/*.js)",
+            "Edit(eslint*js)"
+        ]
+    }
+}
