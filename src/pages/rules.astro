@@ -2,7 +2,7 @@
 import '../styles/rules.scss'
 import Layout from '../layouts/Layout.astro'
 
-const modules = import.meta.glob('../../rules/*.md', { eager: true })
+const modules = import.meta.glob<typeof import('../../rules/3. Gameplay.md')>('../../rules/*.md', { eager: true })
 
 const sections = Object.entries(modules).sort(([a], [b]) => {
     const na = parseInt(a.split('/').pop() ?? '', 10)
