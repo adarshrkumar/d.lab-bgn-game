@@ -12,6 +12,7 @@ html {
 
     @media screen {
         padding: $pad;
+        gap: math.div($pad, 2);
     }
 
     .item {
